@@ -1,7 +1,3 @@
-Below is a clean, structured, professional README.md you can directly place inside your `Git_Training` repository.
-
----
-
 # Git_Training
 
 A dedicated repository for learning, practicing, and mastering Git.
@@ -109,12 +105,4 @@ If someone wants to contribute:
 This repository is open for learning and contribution.
 Use freely, modify, share, and grow.
 
----
 
-If you want, I can also generate:
-
-* Advanced Git Cheatsheet PDF or PNG
-* Visual workflow diagrams
-* More practice tasks and automation scripts
-
-Just say what you want next.
