@@ -1,74 +1,87 @@
-# Git_Training
+Git_Training
 
-A structured repository created for learning, practicing, and mastering Git and GitHub workflows. This space is dedicated to hands-on experimentation with key version control concepts such as commits, branching, merging, collaboration, and remote repository management.
+A dedicated repository for learning, practicing, and mastering Git.
+This repo includes Git commands, workflow examples, cheat sheets, assignments, and practical exercises to help both beginners and intermediate developers improve their Git workflow proficiency.
 
----
+Objectives
 
-## Objective
+Understand core Git concepts (Repositories, Commits, Branching, Merging, etc.)
 
-The primary goal of this repository is to develop strong working knowledge of Git and GitHub, enabling efficient version control, team collaboration, and best practices followed in real-world software development environments.
+Learn frequently used Git commands with examples
 
----
+Practice real-world version control scenarios
 
-## Key Concepts Covered
+Maintain a growing collection of Git resources and notes
 
-| Topic                  | Description                                                                 |
-| ---------------------- | --------------------------------------------------------------------------- |
-| Repository Setup       | Initializing Git, creating GitHub repo, remote origin linking               |
-| Staging & Committing   | Track and record file changes using `add`, `commit`                         |
-| Branching              | Creating and switching between feature branches                             |
-| Merging                | Merging code, resolving conflicts, fast-forward and non-fast-forward merges |
-| Push / Pull / Fetch    | Work with remote repositories effectively                                   |
-| Gitignore              | Excluding unnecessary or sensitive files from version control               |
-| README & Documentation | Writing clean project-level documentation                                   |
-| Licensing              | Understanding open-source licensing (MIT License added)                     |
+Build muscle memory through hands-on tasks
 
----
-
-## Repository Structure
-
-```
+Repository Structure
 Git_Training/
-│
-├── README.md            ← Documentation of the repository
-├── /practice-files      ← Files created for test commits and exercises (optional)
-└── /notes               ← Git command notes & explanations (optional)
-```
+├── README.md               → Documentation, learning path, and references
+├── commands/               → Git command reference files
+├── cheatsheet/             → Quick-reference cheat sheets
+├── practice/               → Tasks, challenges & assignment based learning
+└── examples/               → Sample repos & workflows
 
-You may modify this structure as your learning progresses.
+Git Quick Commands
+Task	Command
+Clone a repository	git clone <repo-url>
+Initialize a repo	git init
+Stage files	git add <file> / git add .
+Commit changes	git commit -m "message"
+Push to remote	git push origin <branch>
+Pull latest changes	git pull
+Create new branch	git branch <branch-name>
+Switch to branch	git checkout <branch>
+Create + switch branch	git checkout -b <branch>
+View history	git log
+View status	git status
 
----
+More detailed commands will be maintained in the commands/ folder.
 
-## Commands Reference (Quick Sheet)
+Cheat Sheet (Short Form)
+git add .                  # Stage all changes
+git commit -m "msg"        # Commit with message
+git push origin main       # Push to main branch
+git fetch                  # Download changes
+git pull                   # Download + merge changes
+git merge <branch>         # Merge branch to current
+git branch -a              # List all branches
+git remote -v              # View remotes
 
-```
-git init
-git status
-git add <file>
-git commit -m "message"
-git remote add origin <url>
-git push -u origin main
-git pull
-git branch
-git checkout <branch>
-git merge <branch>
-```
 
----
+More detailed cheat sheets will be available in the cheatsheet/ directory as PNG, PDF, and MD.
 
-## How to Use This Repository
+Practice Exercises
+Level	Task
+Basic	Init repo, commit, push, pull
+Medium	Create & merge multiple branches
+Advanced	Resolve merge conflicts, rebase, cherry-pick
 
-1. Clone the repository
-   `git clone <repo-url>`
+All tasks will be added in the practice/ directory.
 
-2. Create or modify files for practice
+Upcoming Additions
 
-3. Stage and commit your changes
-   `git add .`
-   `git commit -m "Your commit message"`
+Rebase & Interactive rebase tutorials
 
-4. Push to GitHub
-   `git push`
+Stash & patch applications
 
-Feel free to experiment freely. This repo exists for practice.
+GitHub workflow guide (PR, Issues, Tags, Releases)
 
+Real-project branch strategy examples
+
+GUI tool usage (GitKraken, Sourcetree, VS Code)
+
+Contribution Guidelines
+
+If someone wants to contribute:
+
+1. Fork the repository
+2. Create a new branch
+3. Add your Git notes or examples
+4. Raise a pull request
+
+License
+
+This repository is open for learning and contribution.
+Use freely, modify, share, and grow.
