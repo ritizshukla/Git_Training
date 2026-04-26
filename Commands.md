@@ -1,7 +1,6 @@
-# Git Commands Reference
+# 🚀 Git Commands Reference
 
 A complete reference guide of frequently used Git commands with short explanations and examples.
-You can expand this file anytime as your training progresses.
 
 ---
 
@@ -102,11 +101,103 @@ You can expand this file anytime as your training progresses.
 
 ---
 
-## 10. Advanced Commands (Future Expansion)
+## 10. Linking Local Repo ↔ GitHub
 
-* Cherry-pick commits
-* Interactive rebase
-* Git hooks
-* Tagging & Releases
-* Submodules
+### Push Local Project to GitHub (First Time)
 
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin <repo-url>
+git push -u origin main
+```
+
+---
+
+### Connect Existing GitHub Repo
+
+```bash
+git clone <repo-url>
+cd <repo-name>
+```
+
+---
+
+### Push Changes
+
+```bash
+git add .
+git commit -m "message"
+git push
+```
+
+---
+
+### Pull Updates
+
+```bash
+git pull origin main
+```
+
+---
+
+### Change Remote URL
+
+```bash
+git remote set-url origin <new-url>
+```
+
+---
+
+### Remove Remote
+
+```bash
+git remote remove origin
+```
+
+---
+
+## 11. SSH Setup
+
+### Generate SSH Key
+```bash
+ssh-keygen -t ed25519 -C "you@example.com"
+```
+
+### Start SSH Agent
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+
+### Copy Key
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+### Test Connection
+```bash
+ssh -T git@github.com
+```
+
+---
+
+## 12. Typical Workflow
+
+```bash
+git pull
+git add .
+git commit -m "feat: update project"
+git push
+```
+
+---
+
+## 13. Advanced (Future)
+
+- Cherry-pick
+- Interactive rebase
+- Git hooks
+- Tagging
+- Submodules
